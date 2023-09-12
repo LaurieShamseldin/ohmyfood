@@ -6,6 +6,7 @@ $font : 'Roboto', sans-serif;
 $boxshadow : rgba(149, 157, 165, 0.2) 0px 8px 24px;
 $grey: #EAEAEA;
 $light-grey: #F6F6F6;
+$dark-grey: #353535;
 $primary-color:#9356DC;
 $light-green:#99E2D0;
 $green:#008766;
@@ -198,5 +199,33 @@ h2 {
 
   &__favorite-icon {
     font-size:22px;
+  }
+}
+
+.footer {
+  background:$dark-grey;
+  padding: 30px 20px;
+
+  &__logo {
+    font-family:$font-logo;
+    font-size:1.1rem;
+    color:white;
+  }
+
+  &__list {
+    margin-top:25px;
+  }
+
+  &__elmt {
+    padding-bottom:10px;
+  }
+
+  &__link {
+    color:white;
+
+    &--icon {
+      width:12px;
+      padding-right:10px;
+    }    
   }
 }

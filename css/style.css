@@ -164,4 +164,27 @@ h2 {
   font-size: 22px;
 }
 
+.footer {
+  background: #353535;
+  padding: 30px 20px;
+}
+.footer__logo {
+  font-family: "Shrikhand", cursive;
+  font-size: 1.1rem;
+  color: white;
+}
+.footer__list {
+  margin-top: 25px;
+}
+.footer__elmt {
+  padding-bottom: 10px;
+}
+.footer__link {
+  color: white;
+}
+.footer__link--icon {
+  width: 12px;
+  padding-right: 10px;
+}
+
 /*# sourceMappingURL=style.css.map */
