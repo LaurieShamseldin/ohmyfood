@@ -4,6 +4,12 @@ html {
   font-family: "Roboto", sans-serif;
 }
 
+/* Main elements */
+h2 {
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+
 .btn {
   border: none;
   color: white;
@@ -16,6 +22,7 @@ html {
   background: linear-gradient(0deg, rgba(147, 86, 220, 0.9), rgba(255, 121, 218, 0.9));
 }
 
+/* Header */
 .header {
   padding: 20px 0;
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
@@ -26,6 +33,7 @@ html {
   text-align: center;
 }
 
+/* Localisation */
 .localisation {
   background: #EAEAEA;
   padding: 25px 0;
@@ -39,6 +47,7 @@ html {
   font-weight: 500;
 }
 
+/* Find restaurant */
 .explore {
   background: #F6F6F6;
   padding: 30px 0;
@@ -47,8 +56,6 @@ html {
 .explore__title {
   width: 250px;
   margin: 0 auto;
-  font-weight: 700;
-  font-size: 1.5rem;
 }
 .explore__description {
   width: 300px;
@@ -59,6 +66,44 @@ html {
 }
 .explore__btn {
   margin-top: 30px;
+}
+
+/* Tutorial */
+.tutorial {
+  padding: 30px 20px;
+}
+.tutorial__title {
+  margin-bottom: 30px;
+}
+.tutorial__step {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+  background: #F6F6F6;
+  border-radius: 25px;
+  margin-left: 10px;
+  padding: 30px 25px;
+  position: relative;
+}
+.tutorial__step--number {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  left: 0;
+  transform: translate(-15px);
+  background: #9356DC;
+  color: white;
+  width: 24px;
+  height: 24px;
+  border-radius: 24px;
+}
+.tutorial__step--text {
+  font-weight: 500;
+}
+.tutorial__icon {
+  font-size: 19px;
+  padding-right: 15px;
 }
 
 /*# sourceMappingURL=style.css.map */
