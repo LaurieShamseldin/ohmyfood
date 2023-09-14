@@ -163,8 +163,29 @@ h2 {
   font-weight: 200;
   font-size: 1.05rem;
 }
+.restaurant__favorite {
+  position: relative;
+}
+.restaurant__favorite:hover .restaurant__favorite-icon {
+  opacity: 0;
+}
+.restaurant__favorite:hover .restaurant__favorite-color {
+  opacity: 1;
+}
 .restaurant__favorite-icon {
+  opacity: 1;
   font-size: 22px;
+  transition: opacity 900ms ease-in-out;
+}
+.restaurant__favorite-color {
+  font-size: 22px;
+  opacity: 0;
+  background: linear-gradient(#FF79DA, #9356DC);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  position: absolute;
+  left: 0px;
+  transition: opacity 900ms ease-in-out;
 }
 
 .footer {

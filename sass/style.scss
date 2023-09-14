@@ -211,8 +211,33 @@ h2 {
     font-size:1.05rem;
   }
 
+  &__favorite {
+    position:relative;
+
+    &:hover &-icon {
+      opacity:0;
+    }
+
+    &:hover &-color {
+      opacity:1;
+    }
+  }
+
   &__favorite-icon {
+    opacity:1;
     font-size:22px;
+    transition: opacity 900ms ease-in-out;
+  }
+
+  &__favorite-color {
+    font-size:22px;
+    opacity:0;
+    background:$gradient;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    position:absolute;
+    left:0px;
+    transition: opacity 900ms ease-in-out;
   }
 }
 
