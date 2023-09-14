@@ -268,3 +268,52 @@ h2 {
     }    
   }
 }
+
+
+/* Responsive */
+@media screen and (min-width: 1024px) {
+  .explore__title {
+    width:100%;
+  }
+
+  .explore__description {
+    width:100%;
+  }
+
+  .tutorial {
+    padding: 30px 90px;
+
+    &__steps {
+      display:grid;
+      grid-template-columns: repeat(3, 1fr);
+      column-gap:2rem;
+    }
+  }
+ 
+  .restaurant {
+    padding: 30px 90px;
+
+    &__container {
+      grid-template-columns: repeat(2, 1fr);
+      column-gap:5rem;
+      row-gap:3rem;
+    }
+  }
+
+  .footer {
+    display:flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    column-gap:3rem;
+
+    &__list {
+      display:flex;
+      column-gap:1rem;
+      margin-top:0;
+    }
+
+    &__elmt {
+      padding-bottom:0;
+    }
+  }
+}
