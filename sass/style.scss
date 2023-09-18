@@ -119,7 +119,7 @@ h2 {
   transition: 600ms ease-in-out;
 
 
-  &:hover {
+  &:hover, &:active {
     opacity: 0.8;
     @include boxshadowlight();
   }
@@ -300,11 +300,11 @@ h2 {
   &__favorite {
     position:relative;
 
-    &:hover &-icon {
+    &:hover &-icon, &:active &-icon {
       opacity:0;
     }
 
-    &:hover &-color {
+    &:hover &-color, &:active &-color {
       opacity:1;
     }
   }
@@ -466,7 +466,7 @@ h2 {
       transition : ease-out all 1s;
     }
 
-    &:hover &--check {
+    &:hover &--check, &:active &--check {
       visibility: visible;
       overflow: hidden;
       width:100px;
@@ -474,17 +474,17 @@ h2 {
       cursor: pointer;
     }
 
-    &:hover &--price {
+    &:hover &--price, &:active &--price {
       margin-left:-340px;
       transition: 0.7s ease-in-out;
     }
 
-    &:hover &--circle {
+    &:hover &--circle, &:active &--circle {
       transform: rotate(360deg);
       transition: ease-out all 0.8s;
     }
 
-    &:hover .menu__text {
+    &:hover .menu__text, &:active .menu__text {
       width: calc(100% - 100px);
       transition: 1s ease-in-out;
       cursor: pointer;
