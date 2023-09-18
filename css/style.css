@@ -1,7 +1,30 @@
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap");
+@keyframes loader {
+  0% {
+    background: red;
+    z-index: 1;
+  }
+  100% {
+    background: transparent;
+  }
+}
+@keyframes displaymenu {
+  0% {
+    opacity: 0;
+    transform: translatex(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translatex(0px);
+  }
+}
 html {
   font-family: "Roboto", sans-serif;
+}
+
+body {
+  animation: loader 10s forwards;
 }
 
 /* Main elements */
@@ -279,6 +302,7 @@ h2 {
   padding: 20px;
   border-radius: 15px;
   position: relative;
+  animation: displaymenu 2s forwards;
 }
 .menu__card--subtitle {
   font-weight: 500;

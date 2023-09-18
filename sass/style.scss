@@ -21,9 +21,35 @@ $gradient: linear-gradient($secondary-color, $primary-color);
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 30%);
 }
 
+@keyframes loader {
+  0% {
+    background:red;
+    z-index:1;
+  }
+
+  100% {
+    background:transparent;
+  }
+}
+
+@keyframes displaymenu {
+  0% {
+    opacity:0;
+    transform: translatex(20px);
+  }
+
+ 100% {
+   opacity:1;
+   transform: translatex(0px);
+  }
+}
 
 html {
   font-family:$font;
+}
+
+body {
+  animation: loader 10s forwards;
 }
 
 /* Main elements */
@@ -350,6 +376,7 @@ h2 {
     padding:20px;
     border-radius:15px;
     position:relative;
+    animation: displaymenu 2s forwards;
 
     &--subtitle {
       font-weight:500;
