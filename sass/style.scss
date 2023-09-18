@@ -21,16 +21,16 @@ $gradient: linear-gradient($secondary-color, $primary-color);
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 30%);
 }
 
-@keyframes loader {
-  0% {
-    background:red;
-    z-index:1;
-  }
+// @keyframes loader {
+//   0% {
+//     background:red;
+//     z-index:1;
+//   }
 
-  100% {
-    background:transparent;
-  }
-}
+//   100% {
+//     background:transparent;
+//   }
+// }
 
 @keyframes displaymenu {
   0% {
@@ -371,12 +371,14 @@ h2 {
 
   &__card {
     background:white;
+    opacity:0;
     @include boxshadow();
     margin-bottom:15px;
     padding:20px;
     border-radius:15px;
     position:relative;
     animation: displaymenu 2s forwards;
+    animation-delay: 0.5s;
 
     &--subtitle {
       font-weight:500;
@@ -451,6 +453,18 @@ h2 {
     width: calc(100% - 0px);
   }
 
+}
+
+.second {
+  animation-delay: 1s;
+}
+
+.third {
+  animation-delay: 2s;
+}
+
+.four {
+  animation-delay: 3s;
 }
 
 /* Responsive */

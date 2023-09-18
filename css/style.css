@@ -1,14 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap");
-@keyframes loader {
-  0% {
-    background: red;
-    z-index: 1;
-  }
-  100% {
-    background: transparent;
-  }
-}
 @keyframes displaymenu {
   0% {
     opacity: 0;
@@ -297,12 +288,14 @@ h2 {
 }
 .menu__card {
   background: white;
+  opacity: 0;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
   margin-bottom: 15px;
   padding: 20px;
   border-radius: 15px;
   position: relative;
   animation: displaymenu 2s forwards;
+  animation-delay: 0.5s;
 }
 .menu__card--subtitle {
   font-weight: 500;
@@ -365,6 +358,18 @@ h2 {
   align-items: flex-end;
   transition: 1s ease-in-out;
   width: calc(100% - 0px);
+}
+
+.second {
+  animation-delay: 1s;
+}
+
+.third {
+  animation-delay: 2s;
+}
+
+.four {
+  animation-delay: 3s;
 }
 
 /* Responsive */
