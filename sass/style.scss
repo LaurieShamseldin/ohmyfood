@@ -41,6 +41,7 @@ $gradient: linear-gradient($secondary-color, $primary-color);
   100% {
     opacity:0;
     display:none;
+    position:unset;
   }
 }
 
@@ -58,7 +59,7 @@ $gradient: linear-gradient($secondary-color, $primary-color);
   align-items: center;
   height:100vh;
   width:100vw;
-  position:fixed;
+  //position:fixed;
   animation: displayloader 0.5s linear;
   animation-delay:3s;
   animation-fill-mode: forwards;
@@ -87,8 +88,6 @@ $gradient: linear-gradient($secondary-color, $primary-color);
   background: $light-green;
   animation-delay: 0.5s;
  }
-
-
 
 html {
   font-family:$font;
