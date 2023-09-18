@@ -13,6 +13,7 @@
 @keyframes displayloader {
   0% {
     opacity: 1;
+    position: fixed;
   }
   100% {
     opacity: 0;
@@ -27,15 +28,15 @@
 }
 .loader {
   background: white;
-  z-index: 10;
   display: flex;
+  z-index: 10;
   align-items: center;
-  height: 100vh;
+  height: 100%;
   width: 100vw;
-  position: fixed;
-  animation: displayloader 0.5s linear;
+  position: absolute;
+  animation: displayloader 0s linear;
   animation-delay: 3s;
-  animation-fill-mode: forwards;
+  animation-fill-mode: both;
 }
 .loader__animation {
   display: flex;
