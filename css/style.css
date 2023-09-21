@@ -1,5 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap");
+:root {
+  --timing-animation: 0.4s;
+}
+
 @keyframes displaymenu {
   0% {
     opacity: 0;
@@ -373,7 +377,7 @@ h2 {
 .menu__card--price {
   font-weight: 700;
   font-size: 0.95rem;
-  transition: 0.8s ease-in-out;
+  transition: all var(--timing-animation);
 }
 .menu__card--check {
   display: flex;
@@ -388,35 +392,29 @@ h2 {
   top: 0;
   visibility: hidden;
   overflow: hidden;
-  transition: ease-out all 1s;
+  transition: all var(--timing-animation);
 }
 .menu__card--circle {
   color: white;
   font-size: 20px;
   transform: rotate(0);
-  transition: ease-out all 1s;
+  transition: all var(--timing-animation);
 }
 .menu__card:hover .menu__card--check, .menu__card:active .menu__card--check {
   visibility: visible;
   overflow: hidden;
   width: 100px;
-  transition: ease-out all 0.8s;
   cursor: pointer;
-}
-.menu__card:hover .menu__card--price, .menu__card:active .menu__card--price {
-  transition: 0.7s ease-in-out;
 }
 .menu__card:hover .menu__card--circle, .menu__card:active .menu__card--circle {
   transform: rotate(360deg);
-  transition: ease-out all 0.8s;
 }
 .menu__card:hover .menu__text, .menu__card:active .menu__text {
   width: calc(100% - 100px);
-  transition: 1s ease-in-out;
   cursor: pointer;
 }
 .menu__text {
-  transition: 1s ease-in-out;
+  transition: all var(--timing-animation);
   width: calc(100% - 0px);
 }
 .menu__info {
