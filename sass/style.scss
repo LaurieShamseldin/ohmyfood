@@ -45,7 +45,6 @@ $gradient: linear-gradient($secondary-color, $primary-color);
 
   100% {
     opacity:0;
-    display:none;
     position: absolute;
   }
 }
@@ -329,8 +328,6 @@ h2 {
     font-size:22px;
     opacity:0;
     background:$gradient;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
     position:absolute;
     left:0px;
     transition: opacity 900ms ease-in-out;
@@ -458,7 +455,6 @@ h2 {
     &--price {
       font-weight:700;
       font-size:0.95rem;
-      transition: all var(--timing-animation);
     }
 
     &--check {
@@ -472,8 +468,6 @@ h2 {
       background-color:$light-green;
       right: 0;
       top:0;
-      visibility: hidden;
-      overflow: hidden;
       transition: all var(--timing-animation);
     }
 
@@ -485,25 +479,16 @@ h2 {
     }
 
     &:hover &--check, &:active &--check {
-      visibility: visible;
-      overflow: hidden;
       width:100px;
-      //transition: ease-out all 0.8s;
       cursor: pointer;
-    }
-
-    &:hover &--price, &:active &--price {
-      //transition: 0.7s ease-in-out;
     }
 
     &:hover &--circle, &:active &--circle {
       transform: rotate(360deg);
-      //transition: ease-out all 0.8s;
     }
 
     &:hover .menu__text, &:active .menu__text {
       width: calc(100% - 100px);
-      //transition: 1s ease-in-out;
       cursor: pointer;
     }
   }
